@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MILI CONSTRUCTION | General Contractor in Dagenham</title>
+
+    <meta
+        name="description"
+        content="MILI CONSTRUCTION is a general contractor based in Dagenham, RM8. Contact us for building, renovation, extension, kitchen, bathroom and property improvement enquiries."
+    >
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* ================= NAVIGATION ================= */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #111;
+            color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: auto;
+            padding: 16px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: #e6a400;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #e6a400;
+        }
+
+        .menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        /* ================= HERO ================= */
+
+        .hero {
+            min-height: 650px;
+            background:
+                linear-gradient(
+                    rgba(0,0,0,0.67),
+                    rgba(0,0,0,0.67)
+                ),
+                url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1800&q=85")
+                center/cover no-repeat;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            width: 100%;
+            margin: auto;
+            padding: 70px 25px;
+            color: white;
+        }
+
+        .hero-tag {
+            display: inline-block;
+            background: #e6a400;
+            color: #111;
+            padding: 8px 15px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 6vw, 75px);
+            line-height: 1.05;
+            max-width: 800px;
+            margin-bottom: 25px;
+        }
+
+        .hero p {
+            max-width: 680px;
+            font-size: 20px;
+            margin-bottom: 35px;
+            color: #eee;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 25px;
+            border-radius: 3px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: #e6a400;
+            color: #111;
+        }
+
+        .btn-primary:hover {
+            background: #ffc329;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 2px solid #fff;
+            color: #fff;
+        }
+
+        .btn-outline:hover {
+            background: #fff;
+            color: #111;
+        }
+
+        /* ================= GENERAL ================= */
+
+        section {
+            padding: 85px 25px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title span {
+            color: #e6a400;
+            font-size: 14px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .section-title h2 {
+            font-size: 40px;
+            margin-top: 8px;
+        }
+
+        .section-title p {
+            max-width: 650px;
+            margin: 12px auto 0;
+            color: #666;
+        }
+
+        /* ================= ABOUT ================= */
+
+        .about {
+            background: #f7f7f7;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 55px;
+            align-items: center;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+        }
+
+        .about-text h2 {
+            font-size: 38px;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            color: #555;
+            margin-bottom: 18px;
+        }
+
+        .facts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .fact {
+            background: #111;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .fact strong {
+            display: block;
+            color: #e6a400;
+            font-size: 28px;
+        }
+
+        .fact span {
+            font-size: 13px;
+        }
+
+        /* ================= SERVICES ================= */
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .service {
+            border: 1px solid #ddd;
+            padding: 30px;
+            background: #fff;
+            transition: 0.3s;
+        }
+
+        .service:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .service-number {
+            color: #e6a400;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .service h3 {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .service p {
+            color: #666;
+        }
+
+        /* ================= PROJECTS ================= */
+
+        .projects {
+            background: #f7f7f7;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .project {
+            height: 280px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        .project:hover img {
+            transform: scale(1.08);
+        }
+
+        .project-label {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.85));
+            color: white;
+            padding: 45px 20px 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* ================= REVIEWS ================= */
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .review {
+            background: #f7f7f7;
+            padding: 30px;
+            border-left: 4px solid #e6a400;
+        }
+
+        .stars {
+            color: #e6a400;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .review p {
+            color: #555;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .review strong {
+            font-size: 14px;
+        }
+
+        /* ================= CTA ================= */
+
+        .cta {
+            background:
+                linear-gradient(
+                    rgba(0,0,0,0.78),
+                    rgba(0,0,0,0.78)
+                ),
+                url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1800&q=85")
+                center/cover no-repeat;
+
+            color: white;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            max-width: 650px;
+            margin: 0 auto 30px;
+            color: #ddd;
+        }
+
+        /* ================= CONTACT ================= */
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .contact-info h3 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .contact-item {
+            margin-bottom: 22px;
+        }
+
+        .contact-item strong {
+            display: block;
+            margin-bottom: 5px;
+            color: #111;
+        }
+
+        .contact-item a {
+            color: #555;
+        }
+
+        .contact-item a:hover {
+            color: #e6a400;
+        }
+
+        .contact-form {
+            background: #f7f7f7;
+            padding: 35px;
+        }
+
+        .contact-form h3 {
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 17px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #ccc;
+            background: white;
+            font-family: inherit;
+            font-size: 15px;
+        }
+
+        .form-group textarea {
+            height: 130px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .form-message {
+            display: none;
+            margin-top: 15px;
+            padding: 12px;
+            background: #e9f7e9;
+            color: #226622;
+        }
+
+        /* ================= MAP ================= */
+
+        .map {
+            width: 100%;
+            height: 350px;
+            border: 0;
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background: #111;
+            color: #bbb;
+            padding: 45px 25px 25px;
+        }
+
+        .footer-grid {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        .footer-brand h2 {
+            color: white;
+            margin-bottom: 12px;
+        }
+
+        .footer-brand span {
+            color: #e6a400;
+        }
+
+        .footer-column h4 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .footer-column a {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .footer-column a:hover {
+            color: #e6a400;
+        }
+
+        .copyright {
+            max-width: 1200px;
+            margin: 35px auto 0;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            font-size: 13px;
+        }
+
+        /* ================= FLOATING BUTTONS ================= */
+
+        .floating-call {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            background: #e6a400;
+            color: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 23px;
+            font-weight: bold;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+            z-index: 999;
+        }
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 850px) {
+
+            nav {
+                display: none;
+                position: absolute;
+                top: 65px;
+                left: 0;
+                width: 100%;
+                background: #111;
+            }
+
+            nav.active {
+                display: block;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 0;
+            }
+
+            nav li {
+                border-top: 1px solid #333;
+            }
+
+            nav a {
+                display: block;
+                padding: 15px 25px;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid,
+            .project-grid,
+            .reviews-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 550px) {
+
+            .hero {
+                min-height: 570px;
+            }
+
+            .hero h1 {
+                font-size: 44px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .section-title h2 {
+                font-size: 32px;
+            }
+
+            .services-grid,
+            .project-grid,
+            .reviews-grid,
+            .facts,
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-image img {
+                height: 320px;
+            }
+
+            .cta h2 {
+                font-size: 34px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+    <div class="navbar">
+
+        <a href="#home" class="logo">
+            MILI <span>CONSTRUCTION</span>
+        </a>
+
+        <button class="menu-btn" onclick="toggleMenu()">
+            ☰
+        </button>
+
+        <nav id="nav">
+            <ul>
+                <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#services" onclick="closeMenu()">Services</a></li>
+                <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+                <li><a href="#reviews" onclick="closeMenu()">Reviews</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="hero-tag">
+            General Contractor
+        </div>
+
+        <h1>
+            Building & Renovation
+            With Care and Quality
+        </h1>
+
+        <p>
+            MILI CONSTRUCTION is a general contractor based in
+            Dagenham, providing building and property improvement
+            services.
+        </p>
+
+        <div class="buttons">
+
+            <a href="tel:07990266977" class="btn btn-primary">
+                Call 07990 266977
+            </a>
+
+            <a href="#contact" class="btn btn-outline">
+                Request an Enquiry
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+    <div class="container">
+
+        <div class="about-grid">
+
+            <div class="about-image">
+                <img
+                    src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=85"
+                    alt="Construction work"
+                >
+            </div>
+
+            <div class="about-text">
+
+                <span style="color:#e6a400;font-weight:bold;">
+                    ABOUT MILI CONSTRUCTION
+                </span>
+
+                <h2>
+                    Professional Building & Property Work
+                </h2>
+
+                <p>
+                    MILI CONSTRUCTION is a general contractor located
+                    at 107 Ilchester Road, Dagenham, RM8 2YT.
+                </p>
+
+                <p>
+                    Customer reviews describe work including kitchen
+                    renovations, bathroom renovations, flooring,
+                    extensions, plastering, painting, paving,
+                    fencing and other property improvements.
+                </p>
+
+                <p>
+                    The business currently has a 5.0 rating based on
+                    23 reviews in the information provided.
+                </p>
+
+                <div class="facts">
+
+                    <div class="fact">
+                        <strong>5.0</strong>
+                        <span>Rating</span>
+                    </div>
+
+                    <div class="fact">
+                        <strong>23</strong>
+                        <span>Reviews</span>
+                    </div>
+
+                    <div class="fact">
+                        <strong>RM8</strong>
+                        <span>Dagenham</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section id="services">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>What We Do</span>
+
+            <h2>Our Services</h2>
+
+            <p>
+                Building and property improvement services based
+                on the work described in customer reviews.
+            </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+            <div class="service">
+                <div class="service-number">01</div>
+                <h3>Kitchen Renovation</h3>
+                <p>
+                    Renovation and improvement work for kitchens
+                    and surrounding areas.
+                </p>
+            </div>
+
+            <div class="service">
+                <div class="service-number">02</div>
+                <h3>Bathroom Renovation</h3>
+                <p>
+                    Bathroom renovation and property improvement
+                    projects.
+                </p>
+            </div>
+
+            <div class="service">
+                <div class="service-number">03</div>
+                <h3>Extensions</h3>
+                <p>
+                    Building work including rear single-storey
+                    extension projects.
+                </p>
+            </div>
+
+            <div class="service">
+                <div class="service-number">04</div>
+                <h3>Flooring</h3>
+                <p>
+                    Flooring installation and property
+                    improvement work.
+                </p>
+            </div>
+
+            <div class="service">
+                <div class="service-number">05</div>
+                <h3>Painting & Plastering</h3>
+                <p>
+                    Interior property work including painting
+                    and plastering.
+                </p>
+            </div>
+
+            <div class="service">
+                <div class="service-number">06</div>
+                <h3>Garden & Paving</h3>
+                <p>
+                    Garden improvement, paving, slabs and
+                    fencing work.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section class="projects" id="projects">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Our Work</span>
+
+            <h2>Project Gallery</h2>
+
+            <p>
+                Replace these demonstration images with the
+                company's actual project photographs.
+            </p>
+
+        </div>
+
+        <div class="project-grid">
+
+            <div class="project">
+                <img
+                    src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?auto=format&fit=crop&w=900&q=85"
+                    alt="Kitchen renovation"
+                >
+                <div class="project-label">
+                    Kitchen Renovation
+                </div>
+            </div>
+
+            <div class="project">
+                <img
+                    src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=900&q=85"
+                    alt="Bathroom renovation"
+                >
+                <div class="project-label">
+                    Bathroom Renovation
+                </div>
+            </div>
+
+            <div class="project">
+                <img
+                    src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=85"
+                    alt="Building project"
+                >
+                <div class="project-label">
+                    Building Work
+                </div>
+            </div>
+
+            <div class="project">
+                <img
+                    src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=85"
+                    alt="Construction project"
+                >
+                <div class="project-label">
+                    Construction
+                </div>
+            </div>
+
+            <div class="project">
+                <img
+                    src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=85"
+                    alt="Interior project"
+                >
+                <div class="project-label">
+                    Interior Improvements
+                </div>
+            </div>
+
+            <div class="project">
+                <img
+                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=85"
+                    alt="Property improvement"
+                >
+                <div class="project-label">
+                    Property Improvements
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= REVIEWS ================= -->
+
+<section id="reviews">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Customer Feedback</span>
+
+            <h2>What Customers Say</h2>
+
+            <p>
+                Selected review wording based on the information
+                provided for MILI CONSTRUCTION.
+            </p>
+
+        </div>
+
+
+        <div class="reviews-grid">
+
+            <div class="review">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    “Very fast work, and good quality. Very clean,
+                    respectful and on time.”
+                </p>
+
+                <strong>
+                    — M Maxim
+                </strong>
+
+            </div>
+
+
+            <div class="review">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    “Honestly, reliable staff.”
+                </p>
+
+                <strong>
+                    — Customer review
+                </strong>
+
+            </div>
+
+
+            <div class="review">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    “The whole experience felt easy and collaborative
+                    and the room looks wonderful.”
+                </p>
+
+                <strong>
+                    — Customer review
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <h2>
+            Planning Your Next Project?
+        </h2>
+
+        <p>
+            Get in touch with MILI CONSTRUCTION to discuss your
+            building or property improvement enquiry.
+        </p>
+
+        <a href="tel:07990266977" class="btn btn-primary">
+            Call 07990 266977
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Get In Touch</span>
+
+            <h2>Contact MILI CONSTRUCTION</h2>
+
+            <p>
+                Send an enquiry or contact the business directly.
+            </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+            <div class="contact-info">
+
+                <h3>
+                    Let's discuss your project
+                </h3>
+
+                <div class="contact-item">
+
+                    <strong>Phone</strong>
+
+                    <a href="tel:07990266977">
+                        07990 266977
+                    </a>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <strong>Address</strong>
+
+                    <span>
+                        107 Ilchester Rd,<br>
+                        Dagenham,<br>
+                        RM8 2YT
+                    </span>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <strong>Business Type</strong>
+
+                    <span>
+                        General Contractor
+                    </span>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <strong>Online Booking</strong>
+
+                    <p>
+                        Appointments/bookings can be accessed
+                        through the Checkatrade booking page.
+                    </p>
+
+                    <br>
+
+                    <a
+                        href="https://www.checkatrade.com/trades/milibuildersmilipropertyltd"
+                        target="_blank"
+                        rel="noopener"
+                        class="btn btn-primary"
+                    >
+                        Book Online
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- FORM -->
+
+            <div class="contact-form">
+
+                <h3>
+                    Send an Enquiry
+                </h3>
+
+                <form id="contactForm">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Your Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            required
+                            placeholder="Enter your name"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            required
+                            placeholder="Enter your phone number"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="service">
+                            Type of Project
+                        </label>
+
+                        <select id="service">
+
+                            <option value="General enquiry">
+                                General enquiry
+                            </option>
+
+                            <option value="Kitchen renovation">
+                                Kitchen renovation
+                            </option>
+
+                            <option value="Bathroom renovation">
+                                Bathroom renovation
+                            </option>
+
+                            <option value="Extension">
+                                Extension
+                            </option>
+
+                            <option value="Flooring">
+                                Flooring
+                            </option>
+
+                            <option value="Painting / plastering">
+                                Painting / plastering
+                            </option>
+
+                            <option value="Garden / paving">
+                                Garden / paving
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Project Details
+                        </label>
+
+                        <textarea
+                            id="message"
+                            required
+                            placeholder="Tell us briefly about your project..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary submit-btn"
+                    >
+                        Send Enquiry
+                    </button>
+
+                    <div
+                        class="form-message"
+                        id="formMessage"
+                    >
+                        Your enquiry has been prepared. Please use
+                        the contact method provided to send it.
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MAP ================= -->
+
+<section style="padding-top:0;">
+
+    <div class="container">
+
+        <iframe
+            class="map"
+            src="https://www.google.com/maps?q=107%20Ilchester%20Road%2C%20Dagenham%20RM8%202YT&output=embed"
+            loading="lazy"
+            allowfullscreen
+            title="MILI CONSTRUCTION location"
+        ></iframe>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-grid">
+
+        <div class="footer-brand">
+
+            <h2>
+                MILI <span>CONSTRUCTION</span>
+            </h2>
+
+            <p>
+                General Contractor based in Dagenham, RM8.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Quick Links</h4>
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Contact</h4>
+
+            <a href="tel:07990266977">
+                07990 266977
+            </a>
+
+            <span>
+                Dagenham RM8 2YT
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © <span id="year"></span> MILI CONSTRUCTION.
+        All rights reserved.
+
+    </div>
+
+</footer>
+
+
+<!-- ================= FLOATING CALL ================= -->
+
+<a
+    href="tel:07990266977"
+    class="floating-call"
+    aria-label="Call MILI CONSTRUCTION"
+>
+    ☎
+</a>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+    /* Mobile navigation */
+
+    function toggleMenu() {
+
+        const nav = document.getElementById("nav");
+
+        nav.classList.toggle("active");
+
+    }
+
+
+    function closeMenu() {
+
+        document
+            .getElementById("nav")
+            .classList
+            .remove("active");
+
+    }
+
+
+    /* Current year */
+
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+
+    /* Enquiry form */
+
+    document
+        .getElementById("contactForm")
+        .addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            const name =
+                document.getElementById("name").value.trim();
+
+            const phone =
+                document.getElementById("phone").value.trim();
+
+            const service =
+                document.getElementById("service").value;
+
+            const message =
+                document.getElementById("message").value.trim();
+
+
+            if (!name || !phone || !message) {
+
+                alert("Please complete all required fields.");
+
+                return;
+
+            }
+
+
+            /*
+                For now the form creates a WhatsApp enquiry.
+
+                Replace BUSINESS_WHATSAPP with the actual
+                WhatsApp number if the business provides one.
+            */
+
+            const businessPhone =
+                "447990266977";
+
+
+            const text =
+                `Hello MILI CONSTRUCTION,
+
+Name: ${name}
+Phone: ${phone}
+Project: ${service}
+
+Project details:
+${message}`;
+
+
+            const whatsappURL =
+                "https://wa.me/" +
+                businessPhone +
+                "?text=" +
+                encodeURIComponent(text);
+
+
+            window.open(
+                whatsappURL,
+                "_blank"
+            );
+
+
+            document
+                .getElementById("formMessage")
+                .style.display = "block";
+
+        });
+
+</script>
+
+</body>
+</html>
